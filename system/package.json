@@ -1,0 +1,14 @@
+{
+  "name": "microservice-gateway-system",
+  "private": true,
+  "workspaces": [
+    "services/gateway",
+    "services/user-service",
+    "services/order-service"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "start": "docker compose up --build",
+    "validate": "npm run validate --workspaces"
+  }
+}
